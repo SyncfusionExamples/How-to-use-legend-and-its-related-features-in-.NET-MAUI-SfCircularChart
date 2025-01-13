@@ -37,7 +37,7 @@ namespace LegendSample.ViewModel
             CustomBrushes.Add(new SolidColorBrush(Color.FromArgb("#8419C7")));
         
         }
-        }
+    }
 
     // Define a custom legend class that extends ChartLegend
     public class LegendExt : ChartLegend
@@ -46,30 +46,6 @@ namespace LegendSample.ViewModel
         protected override double GetMaximumSizeCoefficient()
         {
             return 0.9;
-        }
-    }
-
-    // Define a custom class that extends IValueConverter to convert the Brush to Color
-    public class BrushToColorConverter : IValueConverter
-    {
-        public object Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
-        {
-            if (value is Brush brush)
-            {
-                // Handle SolidColorBrush conversion
-                if (brush is SolidColorBrush solidColorBrush)
-                {
-                    return solidColorBrush.Color;
-                }
-            }
-
-            // Default color if conversion fails
-            return Colors.Black;
-        }
-
-        public object? ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture)
-        {
-            return Colors.Black;
         }
     }
 }

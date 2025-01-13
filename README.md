@@ -197,22 +197,37 @@ To customize the appearance of legend items, you can utilize the [ItemTemplate](
 
  **[XAML]**
  ```xml
-<chart:SfCircularChart.Resources> 
-    <ResourceDictionary>
-        <local:BrushToColorConverter x:Key="BrushToColor" />
-    </ResourceDictionary>
-    
-    <DataTemplate x:Key="legendTemplate">
-        <StackLayout Orientation="Horizontal" Margin="4">
-            <Rectangle HeightRequest="5" WidthRequest="15" Margin="3" Background="{Binding IconBrush}"/>
-            <Label Text="{Binding Text}" Margin="3" FontSize="12" FontAttributes="Italic"
-            TextColor="{Binding IconBrush, Converter={StaticResource BrushToColor}}"  FontFamily="PlaywriteAUSA-VariableFont_wght"/>
-        </StackLayout>
-    </DataTemplate>
-</chart:SfCircularChart.Resources>
+ <chart:SfCircularChart.Resources>
+     <DataTemplate x:Key="legendTemplate">
+         <Grid ColumnDefinitions="20,80,Auto" VerticalOptions="Center">
+             <BoxView Grid.Column="0" 
+                      HeightRequest="15" 
+                      WidthRequest="15"
+                      Margin="0,0,0,15"
+                      Background="{Binding IconBrush}" 
+                      VerticalOptions="Center"/>
+
+             <Label Grid.Column="1"
+                    Text="{Binding Item.Country}"
+                    Margin="0,0,5,15"
+                    Padding="0,0,0,3"
+                    HorizontalTextAlignment="Start"
+                    FontSize="14"
+                    VerticalOptions="Center"/>
+
+             <Label Grid.Column="2"
+                    Text="{Binding Item.Value, StringFormat='{0}M'}"
+                    FontSize="14"
+                    HorizontalTextAlignment="End"
+                    Margin="0,0,50,15"
+                    Padding="0,0,0,3"
+                    VerticalOptions="Center"/>
+         </Grid>
+     </DataTemplate>
+ </chart:SfCircularChart.Resources>
 
 <chart:SfCircularChart.Legend>
-    <chart:ChartLegend ItemTemplate="{StaticResource legendTemplate}">
+    <chart:ChartLegend Placement="Right" ItemTemplate="{StaticResource legendTemplate}">
     </chart:ChartLegend>
 </chart:SfCircularChart.Legend> 
  ```
@@ -220,7 +235,7 @@ To customize the appearance of legend items, you can utilize the [ItemTemplate](
  You can observe the customized chart legend items in the screenshot below.
 
  
- ![LegendItemTemplateImage](https://support.syncfusion.com/kb/agent/attachment/article/18792/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM0OTQ1Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.8408_sa84zS-cW96Qwv7sgX6bZuCCqCFbUtaz6qFTog)
+ ![LegendItemTemplateImage](https://support.syncfusion.com/kb/agent/attachment/article/18792/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM0OTczIiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.CWrC6Dy_CNOTuoUQVHyU85i-NmrWIeVEaSGBdpOdX1I)
 
 ##### Troubleshooting:
 

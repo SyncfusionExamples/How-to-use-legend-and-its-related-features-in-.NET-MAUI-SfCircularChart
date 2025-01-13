@@ -15,16 +15,32 @@
             </chart:SfCircularChart.BindingContext>
 
             <chart:SfCircularChart.Resources>
-                
-                <ResourceDictionary>
-                    <local:BrushToColorConverter x:Key="BrushToColor" />
-                </ResourceDictionary>
-                
+
                 <DataTemplate x:Key="legendTemplate">
-                    <StackLayout Orientation="Horizontal" Margin="4">
-                        <Rectangle HeightRequest="5" WidthRequest="15" Margin="3" Background="{Binding IconBrush}"/>
-                        <Label Text="{Binding Text}" Margin="3" FontSize="12" TextColor="{Binding IconBrush, Converter={StaticResource BrushToColor}}" FontAttributes="Italic" FontFamily="PlaywriteAUSA-VariableFont_wght"/>
-                    </StackLayout>
+                    <Grid ColumnDefinitions="20,80,Auto" VerticalOptions="Center">
+                        <BoxView Grid.Column="0" 
+                                 HeightRequest="15" 
+                                 WidthRequest="15"
+                                 Margin="0,0,0,15"
+                                 Background="{Binding IconBrush}" 
+                                 VerticalOptions="Center"/>
+
+                        <Label Grid.Column="1"
+                               Text="{Binding Item.Country}"
+                               Margin="0,0,5,15"
+                               Padding="0,0,0,3"
+                               HorizontalTextAlignment="Start"
+                               FontSize="14"
+                               VerticalOptions="Center"/>
+
+                        <Label Grid.Column="2"
+                               Text="{Binding Item.Value, StringFormat='{0}M'}"
+                               FontSize="14"
+                               HorizontalTextAlignment="End"
+                               Margin="0,0,50,15"
+                               Padding="0,0,0,3"
+                               VerticalOptions="Center"/>
+                    </Grid>
                 </DataTemplate>
             </chart:SfCircularChart.Resources>
 
@@ -35,7 +51,7 @@
             </chart:SfCircularChart.Title>
 
             <chart:SfCircularChart.Legend>
-                <chart:ChartLegend ItemTemplate="{StaticResource legendTemplate}">
+                <chart:ChartLegend Placement="Right" ItemTemplate="{StaticResource legendTemplate}">
                 </chart:ChartLegend>
             </chart:SfCircularChart.Legend>
 
