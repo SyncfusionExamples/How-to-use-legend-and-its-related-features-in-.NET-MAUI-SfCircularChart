@@ -32,7 +32,7 @@ chart.Series.Add(pieSeries);
 this.Content=chart; 
  ```
 
-**Step 2:** To add a [legend](https://help.syncfusion.com/maui/circular-charts/legend) to your MAUI Circular Chart, you need to configure the [Legend](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartBase.html?tabs=tabid-1%2Ctabid-5%2Ctabid-9%2Ctabid-3%2Ctabid-7#Syncfusion_Maui_Charts_ChartBase_Legend) property and initialize the [ChartLegend](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html) bindable object
+**Step 2:** To add a [legend](https://help.syncfusion.com/maui/circular-charts/legend) in MAUI Circular Chart, need to configure the [Legend](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartBase.html?tabs=tabid-1%2Ctabid-5%2Ctabid-9%2Ctabid-3%2Ctabid-7#Syncfusion_Maui_Charts_ChartBase_Legend) property and initialize the [ChartLegend](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html) bindable object
  
 [XAML]
  ```xml
@@ -264,7 +264,7 @@ this.Content = chart;
 
 **Legend maximum size request**
 
-The [GetMaximumSizeCoefficient](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html?tabs=tabid-1%2Ctabid-3%2Ctabid-7%2Ctabid-12%2Ctabid-13%2Ctabid-5%2Ctabid-10%2Ctabid-15#Syncfusion_Maui_Charts_ChartLegend_GetMaximumSizeCoefficient) protected function of the ChartLegend class must be overridden in order to set the maximum size request for the legend view. The value should be between 0 and 1.
+The [GetMaximumSizeCoefficient](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html?tabs=tabid-1%2Ctabid-3%2Ctabid-7%2Ctabid-12%2Ctabid-13%2Ctabid-5%2Ctabid-10%2Ctabid-15#Syncfusion_Maui_Charts_ChartLegend_GetMaximumSizeCoefficient) protected function of the ChartLegend class must be overridden in order to set the required size for the legend view. The value should be between 0 and 1.
 
 [XAML]
  ```xml
