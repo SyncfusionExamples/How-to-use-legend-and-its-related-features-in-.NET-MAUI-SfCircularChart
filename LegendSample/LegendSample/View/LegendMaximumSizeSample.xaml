@@ -21,10 +21,11 @@
             </chart:SfCircularChart.Title>
 
             <chart:SfCircularChart.Legend>
-                <local:LegendExt/>
+                <local:LegendExt>
+                </local:LegendExt>
             </chart:SfCircularChart.Legend>
 
-            <chart:PieSeries ItemsSource="{Binding DataCollection}"
+            <chart:PieSeries ItemsSource="{Binding Data}"
                              XBindingPath="Country"
                              YBindingPath="Value"
                              PaletteBrushes="{Binding CustomBrushes}">

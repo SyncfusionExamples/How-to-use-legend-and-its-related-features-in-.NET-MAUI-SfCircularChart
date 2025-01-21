@@ -52,6 +52,8 @@ chart.Legend = new ChartLegend();
 
 ###### Output:
  
+ The following screenshot explains the legend for each segment of the pie chart, highlighting the significance of each individual section to the users.
+
  ![LegendImage](https://support.syncfusion.com/kb/agent/attachment/article/18792/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM0ODU2Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.ScOM3vo6FrOOHQK84o0G2_CsY9LX9YFLyYywDTapoIE)
 
 **Legend Placement Customization**
@@ -83,7 +85,7 @@ The legend has been shifted to the bottom of the chart, as you can see in the sc
 
 **Legend icon Customization**
 
-To customize the legend icon in your chart, you can use the [LegendIcon](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartSeries.html?tabs=tabid-9%2Ctabid-11%2Ctabid-5%2Ctabid-7%2Ctabid-18%2Ctabid-1%2Ctabid-22%2Ctabid-24%2Ctabid-16%2Ctabid-20%2Ctabid-14%2Ctabid-13%2Ctabid-3#Syncfusion_Maui_Charts_ChartSeries_LegendIcon) property and set it to one of the values from the [ChartLegendIconType](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegendIconType.html) enum. 
+To customize the legend icon in chart, use the [LegendIcon](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartSeries.html?tabs=tabid-9%2Ctabid-11%2Ctabid-5%2Ctabid-7%2Ctabid-18%2Ctabid-1%2Ctabid-22%2Ctabid-24%2Ctabid-16%2Ctabid-20%2Ctabid-14%2Ctabid-13%2Ctabid-3#Syncfusion_Maui_Charts_ChartSeries_LegendIcon) property and set it to one of the values from the [ChartLegendIconType](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegendIconType.html) enum. 
  
 [XAML]
  ```xml
@@ -174,7 +176,7 @@ In the screenshot below you can observe that the legend label has been customize
 
 **Legend Visibility**
 
-To hide the legend, you can use the [IsVisible](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html?tabs=tabid-1%2Ctabid-3%2Ctabid-7%2Ctabid-12%2Ctabid-13%2Ctabid-5%2Ctabid-10%2Ctabid-15#Syncfusion_Maui_Charts_ChartLegend_IsVisible) property. This will allow you to enable or disable the legend in your chart.
+To hide the legend, use the [IsVisible](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html?tabs=tabid-1%2Ctabid-3%2Ctabid-7%2Ctabid-12%2Ctabid-13%2Ctabid-5%2Ctabid-10%2Ctabid-15#Syncfusion_Maui_Charts_ChartLegend_IsVisible) property. This will allow to enable or disable the legend in chart.
  
 [XAML]
  ```xml
@@ -196,7 +198,7 @@ You can see that the chart's legend has been disabled in the screenshot below.
 
 **Toggle Series Visibility**
 
-To hide a particular segment in the MAUI circular charts by toggling the legend, use the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html?tabs=tabid-1%2Ctabid-3%2Ctabid-7%2Ctabid-12%2Ctabid-13%2Ctabid-5%2Ctabid-10%2Ctabid-15#Syncfusion_Maui_Charts_ChartLegend_ToggleSeriesVisibility) property. This property allows you to dynamically change the visibility of a segment by tapping the respective legend item.
+To hide a particular segment in the MAUI circular charts by toggling the legend, use the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html?tabs=tabid-1%2Ctabid-3%2Ctabid-7%2Ctabid-12%2Ctabid-13%2Ctabid-5%2Ctabid-10%2Ctabid-15#Syncfusion_Maui_Charts_ChartLegend_ToggleSeriesVisibility) property. This property allows to dynamically change the visibility of a segment by tapping the respective legend item.
  
 [XAML]
  ```xml
@@ -217,11 +219,11 @@ chart.Legend = new ChartLegend()
  
 In the screenshot below you can observe that the Thailand segment is disabled.
 
- ![LegendToggleSeriesVisibilityImage](https://support.syncfusion.com/kb/agent/attachment/article/18792/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM0ODQ3Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.9i9OFQuqNgdeijVXhMYDqy1n138D1bYqYfjDXR4CUeI)
+ ![LegendToggleSeriesVisibilityImage](https://support.syncfusion.com/kb/agent/attachment/article/18792/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM1MjE1Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.Zt85M1UVgVmWEyyPOHLXayuZjajHDdJUUIxHNC2bmqc)
 
 **Legend item visibility**
 
-The visibility of individual legend items for specific series can be controlled using the [IsVisibleOnLegend](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartSeries.html?tabs=tabid-9%2Ctabid-11%2Ctabid-5%2Ctabid-7%2Ctabid-18%2Ctabid-1%2Ctabid-22%2Ctabid-24%2Ctabid-16%2Ctabid-20%2Ctabid-14%2Ctabid-13%2Ctabid-3#Syncfusion_Maui_Charts_ChartSeries_IsVisibleOnLegend) property of the series. You can disable the legend for particular series using this property.
+The visibility of individual legend items for specific series can be controlled using the [IsVisibleOnLegend](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartSeries.html?tabs=tabid-9%2Ctabid-11%2Ctabid-5%2Ctabid-7%2Ctabid-18%2Ctabid-1%2Ctabid-22%2Ctabid-24%2Ctabid-16%2Ctabid-20%2Ctabid-14%2Ctabid-13%2Ctabid-3#Syncfusion_Maui_Charts_ChartSeries_IsVisibleOnLegend) property of the series. Can disable the legend for particular series using this property.
  
 [XAML]
  ```xml
@@ -278,12 +280,14 @@ public class LegendExt : ChartLegend
      // Override the GetMaximumSizeCoefficient method to customize the legend size
      protected override double GetMaximumSizeCoefficient()
      {
-         return 0.9;
+         return 0.2;
      }
  } 
  ```
  
- ![LegendMaximumSizeRequestImage](https://support.syncfusion.com/kb/agent/attachment/article/18792/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM0ODUwIiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.VWiq0GnClwzqW40pHx_ONATZ5okuzz0Zl1LWj_13p5Q)
+As you can see in the screenshot below, the legend view has been reduced in size due to the large number of data elements
+ 
+ ![LegendMaximumSizeRequestImage](https://support.syncfusion.com/kb/agent/attachment/article/18792/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM1MjE0Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.zOifIwhl07TTBamS6Q9Y4g3d3DC-L1fX-ejA5JoFYzk)
 
 **Items layout Customization**
 
@@ -322,7 +326,7 @@ this.Content = chart;
 
 **Item Template Customization**
 
-To customize the appearance of legend items, you can utilize the [ItemTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html?tabs=tabid-1%2Ctabid-3%2Ctabid-7%2Ctabid-12%2Ctabid-13%2Ctabid-5%2Ctabid-10%2Ctabid-15#Syncfusion_Maui_Charts_ChartLegend_ItemTemplate) property. This allows you to define how each item in the legend should be displayed.
+To customize the appearance of legend items, can utilize the [ItemTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html?tabs=tabid-1%2Ctabid-3%2Ctabid-7%2Ctabid-12%2Ctabid-13%2Ctabid-5%2Ctabid-10%2Ctabid-15#Syncfusion_Maui_Charts_ChartLegend_ItemTemplate) property. This allows to define how each item in the legend should be displayed.
 
  [XAML]
  ```xml

@@ -15,6 +15,8 @@ namespace LegendSample.ViewModel
     public class ViewModel
     {
         public ObservableCollection<DataModel> DataCollection { get; set; }
+        public ObservableCollection<DataModel> Data { get; set; }
+
         public List<Brush> CustomBrushes { get; set; }
         public ViewModel()
         {
@@ -35,6 +37,27 @@ namespace LegendSample.ViewModel
             CustomBrushes.Add(new SolidColorBrush(Color.FromArgb("#C71969")));
             CustomBrushes.Add(new SolidColorBrush(Color.FromArgb("#8AC114")));
             CustomBrushes.Add(new SolidColorBrush(Color.FromArgb("#8419C7")));
+            CustomBrushes.Add(new SolidColorBrush(Colors.Green));
+            CustomBrushes.Add(new SolidColorBrush(Colors.Brown));
+            CustomBrushes.Add(new SolidColorBrush(Colors.DeepPink));
+            CustomBrushes.Add(new SolidColorBrush(Colors.DarkBlue));
+            CustomBrushes.Add(new SolidColorBrush(Colors.Orange));
+
+        Data = new ObservableCollection<DataModel>
+            {
+               new DataModel("India", 22500),
+               new DataModel("Thailand", 8500),
+               new DataModel("Vietnam",7500 ),
+               new DataModel("Pakistan", 3600),
+               new DataModel("US", 2125),
+               new DataModel("Argentina", 400),
+               new DataModel("Australia", 275),
+               new DataModel("Brazil", 1100),
+               new DataModel("Cambodia", 1800),
+               new DataModel("China", 1800),
+               new DataModel("Others", 1398),
+            };
+
         
         }
     }
@@ -45,7 +68,7 @@ namespace LegendSample.ViewModel
         // Override the GetMaximumSizeCoefficient method to customize the legend size
         protected override double GetMaximumSizeCoefficient()
         {
-            return 0.9;
+            return 0.2;
         }
     }
 }
