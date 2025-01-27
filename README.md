@@ -3,7 +3,7 @@ This article demonstrates how to use the legend and its related features in a [.
 
 **Step 1:** Let’s configure the Syncfusion .NET MAUI SfCircular Chart using this [getting started documentation](https://help.syncfusion.com/maui/circular-charts/getting-started) and add the series to it as follows.
  
-[XAML]
+**[XAML]**
  ```xml
 <chart:SfCircularChart>
 
@@ -15,7 +15,7 @@ This article demonstrates how to use the legend and its related features in a [.
 </chart:SfCircularChart> 
  ```
 
-[C#]
+**[C#]**
  ```csharp
 SfCircularChart chart = new SfCircularChart();
 ViewModel viewModel = new ViewModel();
@@ -32,9 +32,9 @@ chart.Series.Add(pieSeries);
 this.Content=chart; 
  ```
 
-**Step 2:** To add a [legend](https://help.syncfusion.com/maui/circular-charts/legend) in MAUI Circular Chart, need to configure the [Legend](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartBase.html?tabs=tabid-1%2Ctabid-5%2Ctabid-9%2Ctabid-3%2Ctabid-7#Syncfusion_Maui_Charts_ChartBase_Legend) property and initialize the [ChartLegend](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html) bindable object
+**Step 2:** To add a [legend](https://help.syncfusion.com/maui/circular-charts/legend) in MAUI Circular Chart, need to configure the [Legend](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartBase.html#Syncfusion_Maui_Charts_ChartBase_Legend) property and initialize the [ChartLegend](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html) bindable object
  
-[XAML]
+**[XAML]**
  ```xml
 <chart:SfCircularChart>
 
@@ -45,22 +45,21 @@ this.Content=chart;
 </chart:SfCircularChart> 
  ```
 
-[C#]
+**[C#]**
  ```csharp
 chart.Legend = new ChartLegend(); 
  ```
 
-###### Output:
+### Output:
  
- The following screenshot explains the legend for each segment of the pie chart, highlighting the significance of each individual section to the users.
+The following screenshot explains the legend for each segment of the pie chart, highlighting the significance of each individual section to the users.
 
  ![LegendImage](https://support.syncfusion.com/kb/agent/attachment/article/18792/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM0ODU2Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.ScOM3vo6FrOOHQK84o0G2_CsY9LX9YFLyYywDTapoIE)
 
-**Legend Placement Customization**
-
-To customize the legend position, use the [Placement](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html?tabs=tabid-1%2Ctabid-3%2Ctabid-7%2Ctabid-12%2Ctabid-13%2Ctabid-5%2Ctabid-10%2Ctabid-15#Syncfusion_Maui_Charts_ChartLegend_Placement) property. It offers four built-in positions: Top, Bottom, Left, and Right.
+## Legend Placement Customization
+To customize the legend position, use the [Placement](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html#Syncfusion_Maui_Charts_ChartLegend_Placement) property. It offers four built-in positions: Top, Bottom, Left, and Right.
  
-[XAML]
+**[XAML]**
  ```xml
 <chart:SfCircularChart.Legend>
     <chart:ChartLegend Placement="Bottom">
@@ -68,7 +67,7 @@ To customize the legend position, use the [Placement](https://help.syncfusion.co
 </chart:SfCircularChart.Legend>
  ```
 
-[C#]
+**[C#]**
  ```csharp
 SfCircularChart chart = new SfCircularChart();
 . . .
@@ -83,11 +82,10 @@ The legend has been shifted to the bottom of the chart, as you can see in the sc
 
  ![LegendPlacementImage](https://support.syncfusion.com/kb/agent/attachment/article/18792/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM0ODQ4Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.AKe_xffCM8GmpWqnyqtYOYW-NqDGhGAoCp9p8aYGNK4)
 
-**Legend icon Customization**
-
-To customize the legend icon in chart, use the [LegendIcon](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartSeries.html?tabs=tabid-9%2Ctabid-11%2Ctabid-5%2Ctabid-7%2Ctabid-18%2Ctabid-1%2Ctabid-22%2Ctabid-24%2Ctabid-16%2Ctabid-20%2Ctabid-14%2Ctabid-13%2Ctabid-3#Syncfusion_Maui_Charts_ChartSeries_LegendIcon) property and set it to one of the values from the [ChartLegendIconType](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegendIconType.html) enum. 
+## Legend icon Customization
+To customize the legend icon in circular chart, use the [LegendIcon](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartSeries.html#Syncfusion_Maui_Charts_ChartSeries_LegendIcon) property and set it to one of the values from the [ChartLegendIconType](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegendIconType.html) enum. 
  
-[XAML]
+**[XAML]**
  ```xml
 <chart:SfCircularChart>
 
@@ -104,7 +102,7 @@ To customize the legend icon in chart, use the [LegendIcon](https://help.syncfus
 </chart:SfCircularChart> 
  ```
 
-[C#]
+**[C#]**
  ```csharp
 SfCircularChart chart = new SfCircularChart();
 
@@ -131,17 +129,16 @@ this.Content=chart;
 
  ![LegendIconImage](https://support.syncfusion.com/kb/agent/attachment/article/18792/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM0ODQ1Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.v_06t7ztJEtM7jF4PUUQYCc0NBGpxISLZflqpYSAUtg)
 
-**Legend labels Customization**
+## Legend labels Customization 
+The appearance of the legend label can be customized using the [LabelStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html#Syncfusion_Maui_Charts_ChartLegend_LabelStyle) property.
 
-The appearance of the legend label can be customized using the [LabelStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html?tabs=tabid-1%2Ctabid-3%2Ctabid-7%2Ctabid-12%2Ctabid-13%2Ctabid-5%2Ctabid-10%2Ctabid-15#Syncfusion_Maui_Charts_ChartLegend_LabelStyle) property.
-
-* [TextColor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegendLabelStyle.html?tabs=tabid-2%2Ctabid-11%2Ctabid-9%2Ctabid-7%2Ctabid-5%2Ctabid-3#Syncfusion_Maui_Charts_ChartLegendLabelStyle_TextColor) – Gets or sets the color of the label.
-* [FontFamily](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegendLabelStyle.html?tabs=tabid-2%2Ctabid-11%2Ctabid-9%2Ctabid-7%2Ctabid-5%2Ctabid-3#Syncfusion_Maui_Charts_ChartLegendLabelStyle_FontFamily) - Gets or sets the font family for the legend label.
-* [FontAttributes](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegendLabelStyle.html?tabs=tabid-2%2Ctabid-11%2Ctabid-9%2Ctabid-7%2Ctabid-5%2Ctabid-3#Syncfusion_Maui_Charts_ChartLegendLabelStyle_FontAttributes) - Gets or sets the font style for the legend label.
-* [FontSize](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegendLabelStyle.html?tabs=tabid-2%2Ctabid-11%2Ctabid-9%2Ctabid-7%2Ctabid-5%2Ctabid-3#Syncfusion_Maui_Charts_ChartLegendLabelStyle_FontSize) - Gets or sets the font size for the legend label.
-* [Margin](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegendLabelStyle.html?tabs=tabid-2%2Ctabid-11%2Ctabid-9%2Ctabid-7%2Ctabid-5%2Ctabid-3#Syncfusion_Maui_Charts_ChartLegendLabelStyle_Margin) - Gets or sets the margin size of labels.
+* [TextColor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Charts_ChartLegendLabelStyle_TextColor) – Gets or sets the color of the label.
+* [FontFamily](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Charts_ChartLegendLabelStyle_FontFamily) - Gets or sets the font family for the legend label.
+* [FontAttributes](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Charts_ChartLegendLabelStyle_FontAttributes) - Gets or sets the font style for the legend label.
+* [FontSize](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Charts_ChartLegendLabelStyle_FontSize) - Gets or sets the font size for the legend label.
+* [Margin](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Charts_ChartLegendLabelStyle_Margin) - Gets or sets the margin size of labels.
  
-[XAML]
+**[XAML]**
  ```xml
 <chart:SfCircularChart.Legend>
     <chart:ChartLegend>
@@ -153,7 +150,7 @@ The appearance of the legend label can be customized using the [LabelStyle](http
 </chart:SfCircularChart.Legend>
  ```
 
-[C#]
+**[C#]**
  ```csharp
 SfCircularChart chart = new SfCircularChart();
 
@@ -174,18 +171,17 @@ In the screenshot below you can observe that the legend label has been customize
  
  ![LegendLabelStyleImage](https://support.syncfusion.com/kb/agent/attachment/article/18792/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM0ODQ5Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9._LiRzilkTD0Y0WafOYPryLPYw74hHqLoGICKJeWx6Ug)
 
-**Legend Visibility**
-
-To hide the legend, use the [IsVisible](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html?tabs=tabid-1%2Ctabid-3%2Ctabid-7%2Ctabid-12%2Ctabid-13%2Ctabid-5%2Ctabid-10%2Ctabid-15#Syncfusion_Maui_Charts_ChartLegend_IsVisible) property. This will allow to enable or disable the legend in chart.
+## Legend Visibility
+To hide the legend, use the [IsVisible](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html#Syncfusion_Maui_Charts_ChartLegend_IsVisible) property. This will allow to enable or disable the legend in chart.
  
-[XAML]
+**[XAML]**
  ```xml
 <chart:SfCircularChart.Legend>
     <chart:ChartLegend IsVisible="False"/>
 </chart:SfCircularChart.Legend>
  ```
  
-[C#]
+**[C#]**
  ```csharp
 chart.Legend = new ChartLegend()
 { 
@@ -196,11 +192,10 @@ You can see that the chart's legend has been disabled in the screenshot below.
 
  ![LegendIsVisibleImage](https://support.syncfusion.com/kb/agent/attachment/article/18792/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM0ODQ2Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.o0taFE-o4GH3BiCnPWvMJ-3IxxNuFyIhfw4BqdTs2Oo)
 
-**Toggle Series Visibility**
-
-To hide a particular segment in the MAUI circular charts by toggling the legend, use the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html?tabs=tabid-1%2Ctabid-3%2Ctabid-7%2Ctabid-12%2Ctabid-13%2Ctabid-5%2Ctabid-10%2Ctabid-15#Syncfusion_Maui_Charts_ChartLegend_ToggleSeriesVisibility) property. This property allows to dynamically change the visibility of a segment by tapping the respective legend item.
+## Toggle Series Visibility
+To hide a particular segment in the MAUI circular charts by toggling the legend, use the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html#Syncfusion_Maui_Charts_ChartLegend_ToggleSeriesVisibility) property. This property allows  to dynamically change the visibility of a segment by tapping the respective legend item.
  
-[XAML]
+**[XAML]**
  ```xml
 <chart:SfCircularChart.Legend>
     <chart:ChartLegend Placement="Bottom" ToggleSeriesVisibility="True">
@@ -208,7 +203,7 @@ To hide a particular segment in the MAUI circular charts by toggling the legend,
 </chart:SfCircularChart.Legend>
  ```
 
-[C#]
+**[C#]**
  ```csharp
 chart.Legend = new ChartLegend()
 { 
@@ -219,13 +214,14 @@ chart.Legend = new ChartLegend()
  
 In the screenshot below you can observe that the Thailand segment is disabled.
 
+ 
  ![LegendToggleSeriesVisibilityImage](https://support.syncfusion.com/kb/agent/attachment/article/18792/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM1MjE1Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.Zt85M1UVgVmWEyyPOHLXayuZjajHDdJUUIxHNC2bmqc)
 
-**Legend item visibility**
+## Legend item visibility
 
-The visibility of individual legend items for specific series can be controlled using the [IsVisibleOnLegend](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartSeries.html?tabs=tabid-9%2Ctabid-11%2Ctabid-5%2Ctabid-7%2Ctabid-18%2Ctabid-1%2Ctabid-22%2Ctabid-24%2Ctabid-16%2Ctabid-20%2Ctabid-14%2Ctabid-13%2Ctabid-3#Syncfusion_Maui_Charts_ChartSeries_IsVisibleOnLegend) property of the series. Can disable the legend for particular series using this property.
+The visibility of individual legend items for specific series can be controlled using the [IsVisibleOnLegend](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartSeries.html#Syncfusion_Maui_Charts_ChartSeries_IsVisibleOnLegend) property of the series. Can disable the legend for particular series using this property.
  
-[XAML]
+**[XAML]**
  ```xml
 <chart:SfCircularChart>
     <chart:SfCircularChart.Legend>
@@ -240,7 +236,7 @@ The visibility of individual legend items for specific series can be controlled 
 </chart:SfCircularChart> 
  ```
 
-[C#]
+**[C#]**
  ```csharp
 SfCircularChart chart = new SfCircularChart();
 
@@ -260,40 +256,46 @@ chart.Series.Add(pieSeries);
 this.Content = chart; 
  ```
 
+In the screenshot below, you can observe that the visibility of the legend for this pie series is enabled.
+
  ![IsVisibleOnLegend](https://support.syncfusion.com/kb/agent/attachment/article/18792/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM0ODU2Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.ScOM3vo6FrOOHQK84o0G2_CsY9LX9YFLyYywDTapoIE)
 
-**Legend maximum size request**
+## Legend maximum size request
 
-The [GetMaximumSizeCoefficient](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html?tabs=tabid-1%2Ctabid-3%2Ctabid-7%2Ctabid-12%2Ctabid-13%2Ctabid-5%2Ctabid-10%2Ctabid-15#Syncfusion_Maui_Charts_ChartLegend_GetMaximumSizeCoefficient) protected function of the ChartLegend class must be overridden in order to set the required size for the legend view. The value should be between 0 and 1.
+The [GetMaximumSizeCoefficient](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html#Syncfusion_Maui_Charts_ChartLegend_GetMaximumSizeCoefficient) protected function of the ChartLegend class must be overridden in order to set the required size for the legend view. The value should be between 0 and 1.
 
-[XAML]
+**[XAML]**
  ```xml
 <chart:SfCircularChart.Legend>
-    <local:LegendExt/>
+    <local:LegendExt Placement="Bottom">
+          <local:LegendExt.ItemsLayout>
+          <FlexLayout Wrap="Wrap" WidthRequest="600">
+          </FlexLayout>
+          </local:LegendExt.ItemsLayout>
+    </local:LegendExt>
 </chart:SfCircularChart.Legend> 
  ```
 
-[C#]
+**[C#]**
  ```csharp
 public class LegendExt : ChartLegend
  {
      // Override the GetMaximumSizeCoefficient method to customize the legend size
      protected override double GetMaximumSizeCoefficient()
      {
-         return 0.2;
+         return 0.9;
      }
  } 
  ```
- 
-As you can see in the screenshot below, the legend view has been reduced in size due to the large number of data elements
- 
- ![LegendMaximumSizeRequestImage](https://support.syncfusion.com/kb/agent/attachment/article/18792/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM1MjE0Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.zOifIwhl07TTBamS6Q9Y4g3d3DC-L1fX-ejA5JoFYzk)
 
-**Items layout Customization**
-
-Each legend item's position and arrangement can be customized using the [ItemsLayout](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html?tabs=tabid-1%2Ctabid-3%2Ctabid-7%2Ctabid-12%2Ctabid-13%2Ctabid-5%2Ctabid-10%2Ctabid-15#Syncfusion_Maui_Charts_ChartLegend_ItemsLayout) property. Any layout type can be used with this feature.
+As you can see in the screenshot below, the legend view size has been increased with the help of overriding the GetMaximumSizeCoefficient method.
  
-[XAML]
+ ![LegendMaximumSizeRequestImage](https://support.syncfusion.com/kb/agent/attachment/article/18792/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM1MzQyIiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.n3mY2c1f78Pbj6w34Dlf4mnTuVNXFgjo0pbab9LiXcE)
+
+## Items layout Customization
+Each legend item's position and arrangement can be customized using the [ItemsLayout](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html#Syncfusion_Maui_Charts_ChartLegend_ItemsLayout) property. Any layout type can be used with this feature.
+ 
+**[XAML]**
  ```xml
 <chart:SfCircularChart.Legend>
     <chart:ChartLegend>
@@ -306,7 +308,7 @@ Each legend item's position and arrangement can be customized using the [ItemsLa
 </chart:SfCircularChart.Legend> 
  ```
 
-[C#]
+**[C#]**
  ```csharp
 SfCircularChart chart = new SfCircularChart();
 . . .
@@ -324,11 +326,10 @@ this.Content = chart;
 
  ![LegendItemLayoutImage](https://support.syncfusion.com/kb/agent/attachment/article/18792/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM0ODUyIiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.AM8hPpSyjvyRY61H2r8TZZGKYeQxCIIuR7kMwqKczV4)
 
-**Item Template Customization**
+## Item Template Customization
+To customize the appearance of legend items, can utilize the [ItemTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html#Syncfusion_Maui_Charts_ChartLegend_ItemTemplate) property. This allows to define how each item in the legend should be displayed.
 
-To customize the appearance of legend items, can utilize the [ItemTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartLegend.html?tabs=tabid-1%2Ctabid-3%2Ctabid-7%2Ctabid-12%2Ctabid-13%2Ctabid-5%2Ctabid-10%2Ctabid-15#Syncfusion_Maui_Charts_ChartLegend_ItemTemplate) property. This allows to define how each item in the legend should be displayed.
-
- [XAML]
+ **[XAML]**
  ```xml
  <chart:SfCircularChart.Resources>
      <DataTemplate x:Key="legendTemplate">
@@ -365,7 +366,7 @@ To customize the appearance of legend items, can utilize the [ItemTemplate](http
 </chart:SfCircularChart.Legend> 
  ```
 
-[C#]
+**[C#]**
  ```csharp
 SfCircularChart chart = new SfCircularChart();
 ChartLegend legend = new ChartLegend();
@@ -379,9 +380,9 @@ this.Content = chart;
 
  ![LegendItemTemplateImage](https://support.syncfusion.com/kb/agent/attachment/article/18792/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM0OTczIiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.CWrC6Dy_CNOTuoUQVHyU85i-NmrWIeVEaSGBdpOdX1I)
 
-**Troubleshooting:**
+### Troubleshooting:
 
-###### Path too long exception
+**Path too long exception**
 
 If you are facing a path too long exception when building this example project, close Visual Studio and rename the repository to a shorter name before building the project.
 

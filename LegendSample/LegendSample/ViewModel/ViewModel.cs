@@ -51,10 +51,16 @@ namespace LegendSample.ViewModel
                new DataModel("Pakistan", 3600),
                new DataModel("US", 2125),
                new DataModel("Argentina", 400),
-               new DataModel("Australia", 275),
-               new DataModel("Brazil", 1100),
+               new DataModel("Australia",275 ),
+               new DataModel("Brazil",1100 ),
+               new DataModel("Burma", 1850),
                new DataModel("Cambodia", 1800),
-               new DataModel("China", 1800),
+               new DataModel("China",1800 ),
+               new DataModel("European Union", 400),
+               new DataModel("Guyana", 440),
+               new DataModel("Paraguay", 820),
+               new DataModel("Turkey",240 ),
+               new DataModel("Uruguay", 900),
                new DataModel("Others", 1398),
             };
 
@@ -68,7 +74,7 @@ namespace LegendSample.ViewModel
         // Override the GetMaximumSizeCoefficient method to customize the legend size
         protected override double GetMaximumSizeCoefficient()
         {
-            return 0.2;
+            return 0.9;
         }
     }
 }

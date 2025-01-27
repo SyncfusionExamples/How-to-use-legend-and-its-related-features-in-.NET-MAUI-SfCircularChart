@@ -21,7 +21,11 @@
             </chart:SfCircularChart.Title>
 
             <chart:SfCircularChart.Legend>
-                <local:LegendExt>
+                <local:LegendExt Placement="Bottom">
+                    <local:LegendExt.ItemsLayout>
+                        <FlexLayout Wrap="Wrap" WidthRequest="600">
+                        </FlexLayout>
+                    </local:LegendExt.ItemsLayout>
                 </local:LegendExt>
             </chart:SfCircularChart.Legend>
 
