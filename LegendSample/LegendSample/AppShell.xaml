@@ -41,26 +41,19 @@
         ContentTemplate="{DataTemplate local:LegendIsVisibleSample}"
         Route="LegendIsVisibleSample" />
     </FlyoutItem>
-    
+
     <FlyoutItem Title="Toggle Series Visibility">
         <ShellContent
         Title="Toggle Series Visibility"
         ContentTemplate="{DataTemplate local:ToggleSeriesVisibilitySample}"
         Route="ToggleSeriesVisibilitySample" />
     </FlyoutItem>
-    
-    <FlyoutItem Title="Legend item visibility">
-        <ShellContent
-        Title="Legend item visibility"
-        ContentTemplate="{DataTemplate local:IsVisibleOnLegendSample}"
-        Route="IsVisibleOnLegendSample" />
-    </FlyoutItem>
 
-    <FlyoutItem Title="Legend maximum size">
+    <FlyoutItem Title="Item Template">
         <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:LegendMaximumSizeSample}"
-        Route="LegendMaximumSizeSample" />
+        Title="Item Template" 
+        ContentTemplate="{DataTemplate local:LegendItemTemplateSample}"
+        Route="LegendItemTemplateSample" />
     </FlyoutItem>
 
     <FlyoutItem Title="Items Layout">
@@ -69,12 +62,12 @@
         ContentTemplate="{DataTemplate local:LegendItemsLayoutSample}"
         Route="LegendItemsLayoutSample" />
     </FlyoutItem>
-
-    <FlyoutItem Title="Item Template">
+    
+    <FlyoutItem Title="Legend maximum size">
         <ShellContent
-        Title="Item Template" 
-        ContentTemplate="{DataTemplate local:LegendItemTemplateSample}"
-        Route="LegendItemTemplateSample" />
+        Title="Home"
+        ContentTemplate="{DataTemplate local:LegendMaximumSizeSample}"
+        Route="LegendMaximumSizeSample" />
     </FlyoutItem>
     
 </Shell>

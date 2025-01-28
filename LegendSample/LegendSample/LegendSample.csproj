@@ -75,9 +75,6 @@
 	  <MauiXaml Update="View\DefaultLegendSample.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="View\IsVisibleOnLegendSample.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="View\LegendIconSample.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
