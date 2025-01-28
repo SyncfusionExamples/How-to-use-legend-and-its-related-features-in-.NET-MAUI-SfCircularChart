@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LegendSample.View.LegendItemTemplateSample"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+             xmlns:local="clr-namespace:LegendSample.ViewModel">
+
+    <Border Stroke="#092748" Padding="{OnPlatform Default=10, Android=7,iOS=7}" 
+            StrokeShape="RoundRectangle 10" Margin="{OnPlatform Android=10, Default=25}" StrokeThickness="2">
+
+        <chart:SfCircularChart x:Name="chart">
+
+            <chart:SfCircularChart.BindingContext>
+                <local:ViewModel x:Name="viewModel"/>
+            </chart:SfCircularChart.BindingContext>
+
+            <chart:SfCircularChart.Resources>
+
+                <DataTemplate x:Key="legendTemplate">
+                    <Grid ColumnDefinitions="20,80,Auto" VerticalOptions="Center">
+                        <BoxView Grid.Column="0" 
+                                 HeightRequest="15" 
+                                 WidthRequest="15"
+                                 Margin="0,0,0,15"
+                                 Background="{Binding IconBrush}" 
+                                 VerticalOptions="Center"/>
+
+                        <Label Grid.Column="1"
+                               Text="{Binding Item.Country}"
+                               Margin="0,0,5,15"
+                               Padding="0,0,0,3"
+                               HorizontalTextAlignment="Start"
+                               FontSize="14"
+                               VerticalOptions="Center"/>
+
+                        <Label Grid.Column="2"
+                               Text="{Binding Item.Value, StringFormat='{0}M'}"
+                               FontSize="14"
+                               HorizontalTextAlignment="End"
+                               Margin="0,0,50,15"
+                               Padding="0,0,0,3"
+                               VerticalOptions="Center"/>
+                    </Grid>
+                </DataTemplate>
+            </chart:SfCircularChart.Resources>
+
+            <chart:SfCircularChart.Title>
+                <Label Text="Biggest exporters of rice worldwide in 2022 (in tons)" Margin="5,0,0,0" 
+                       HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" 
+                       FontSize="{OnPlatform WinUI='18', Android='12', iOS='14', MacCatalyst='18'}" TextColor="#092748"/>
+            </chart:SfCircularChart.Title>
+
+            <chart:SfCircularChart.Legend>
+                <chart:ChartLegend Placement="Right" ItemTemplate="{StaticResource legendTemplate}">
+                </chart:ChartLegend>
+            </chart:SfCircularChart.Legend>
+
+            <chart:PieSeries ItemsSource="{Binding DataCollection}" 
+                             XBindingPath="Country" 
+                             YBindingPath="Value"
+                             PaletteBrushes="{Binding CustomBrushes}">
+            </chart:PieSeries>
+
+        </chart:SfCircularChart>
+    </Border>
+</ContentPage>

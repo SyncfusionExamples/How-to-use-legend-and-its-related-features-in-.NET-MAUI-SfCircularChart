@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="LegendSample.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:LegendSample.View"
+    Shell.FlyoutBehavior="Flyout"
+    Title="LegendSampleInfo">
+
+    <FlyoutItem Title="Legend">
+        <ShellContent
+            Title="Legend"
+            ContentTemplate="{DataTemplate local:DefaultLegendSample}"
+            Route="DefaultLegendSample" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Legend Placement">
+        <ShellContent
+            Title="Legend Placement"
+            ContentTemplate="{DataTemplate local:LegendPlacementSample}"
+            Route="LegendPlacementSample" />
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Legend Icon">
+        <ShellContent
+        Title="Legend Icon"
+        ContentTemplate="{DataTemplate local:LegendIconSample}"
+        Route="LegendIconSample" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Legend labels">
+        <ShellContent
+      Title="Legend labels"
+      ContentTemplate="{DataTemplate local:LegendlabelsCustomizationSample}"
+      Route="LegendlabelsCustomizationSample" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Legend Visibility">
+        <ShellContent
+        Title="Legend Visibility"
+        ContentTemplate="{DataTemplate local:LegendIsVisibleSample}"
+        Route="LegendIsVisibleSample" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Toggle Series Visibility">
+        <ShellContent
+        Title="Toggle Series Visibility"
+        ContentTemplate="{DataTemplate local:ToggleSeriesVisibilitySample}"
+        Route="ToggleSeriesVisibilitySample" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Item Template">
+        <ShellContent
+        Title="Item Template" 
+        ContentTemplate="{DataTemplate local:LegendItemTemplateSample}"
+        Route="LegendItemTemplateSample" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Items Layout">
+        <ShellContent
+        Title="Items Layout"
+        ContentTemplate="{DataTemplate local:LegendItemsLayoutSample}"
+        Route="LegendItemsLayoutSample" />
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Legend maximum size">
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:LegendMaximumSizeSample}"
+        Route="LegendMaximumSizeSample" />
+    </FlyoutItem>
+    
+</Shell>
